@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universidad Tecnológica Fidel Velázquez</title>
+  <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6OYK5ZIPzwbrzBMM799HqRBz-92qEpWPnAC7-zZ4s&s">
+  <style>
+    body {
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 380px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #27a48b;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      background-color: #27a48b;
+      color: #eef3f2;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #27a48b;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 80px;
+      margin-bottom: 20px;
+    }
+
+    .forgot-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body style="background-color:#F5F5F5;">
+  <div class="container">
+    <h2><font color="#94949c">Iniciar sesión</font></h2>
+    <img src="https://seeklogo.com/images/D/dragon-universidad-tecnologica-fidel-velazquez-logo-4D18F47839-seeklogo.com.png">
+    <input id="email-input" type="email" placeholder="Correo electrónico" required>
+    <input id="password-input" type="password" placeholder="Contraseña" required>
+    <button type="submit" onclick="login()">Iniciar sesión</button>
+    <div class="forgot-link">
+      <a href="file:///D:/HTML/interfaz.html" style="color: #27a48b;">¿Olvidaste tu contraseña?</a>
+    </div>
+  </div>
+
+  <script>
+    function login() {
+      // Obtener los valores del correo electrónico y la contraseña
+      var email = document.getElementById("email-input").value;
+      var password = document.getElementById("password-input").value;
+      
+      // Realizar la validación de la información (puedes personalizar esta parte según tus necesidades)
+      if (email === "22302076@utfv.edu.mx" && password === "12345") {
+        // Redirigir a la página deseada después de iniciar sesión exitosamente
+        window.location.href = "file:///G:/HTML/Untitled-1.html";
+      } else {
+        // Mostrar un mensaje de error o realizar otra acción en caso de credenciales inválidas
+        alert("Credenciales inválidas. Inténtalo nuevamente.");
+      }
+    }
+  </script>
+</body>
+
+</html>
