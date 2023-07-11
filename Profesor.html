@@ -1,0 +1,108 @@
+﻿<html>
+<head>
+  <title>Registro de Profesor</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      width: 400px;
+      display: block;
+      text-align: left;
+      margin: 0 auto;
+    }
+
+    form label, form input {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    .tipo-usuario {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    
+    .tipo-usuario span {
+      display: inline-block;
+      margin: 0 5px;
+    }
+    
+    .btn-registrarse {
+      background-color: #1ACCA4;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .btn-registrarse:hover {
+      background-color: #189075;
+    }
+
+    button {
+      background-color: #1ACCA4;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: #189075;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+<br></br>
+<img src="data:image/png;base64,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" />
+    <h1>Registro de profesor</h1>
+     <div class="btn-group">
+      <button type="button">Alumno</button>
+    </div>
+    <form action="procesar_registro_alumnos.php" method="POST">
+      <label for="clave">Clave:</label>
+      <input type="text" id="clave" name="clave" required>
+
+      <label for="ap_paterno">Apellido Paterno:</label>
+      <input type="text" id="ap_paterno" name="ap_paterno" required>
+
+      <label for="ap_materno">Apellido Materno:</label>
+      <input type="text" id="ap_materno" name="ap_materno" required>
+
+      <label for="nombres">Nombres:</label>
+      <input type="text" id="nombres" name="nombres" required>
+
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo_institucional" name="correo_institucional" required>
+
+      <label for="contrasena">Crear Contraseña:</label>
+      <input type="password" id="contrasena" name="contrasena" required>
+
+      <input type="submit" value="Registrarse" class="btn-registrarse">
+      <a href="iniciar_sesion.php">Iniciar Sesión</a>
+    </form>
+
+   
+    </div>
+  </div>
+</body>
+</html>

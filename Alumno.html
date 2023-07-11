@@ -1,0 +1,122 @@
+﻿<html>
+<head>
+  <title>Registro de Alumno</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      width: 400px;
+      display: block;
+      text-align: left;
+      margin: 0 auto;
+    }
+
+    form label, form input {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    .profesor-button {
+      margin-top: 20px;
+    }
+    
+    .tipo-usuario {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    
+    .tipo-usuario span {
+      display: inline-block;
+      margin: 0 5px;
+    }
+    
+    .btn-registrarse {
+      background-color: #1ACCA4;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .btn-registrarse:hover {
+      background-color: #189075;
+    }
+
+
+
+button {
+      background-color: #1ACCA4;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: #189075;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<img src="https://i.pinimg.com/474x/ed/f6/37/edf63784806cd10d29b91747b014537f--tattoo-dragon-dragon-tattoo-designs.jpg" width="300" height="200" >
+    <h1>Registro de alumno</h1>
+
+<div class="btn-group">
+      <button type="button">Profesor</button>
+    </div>
+
+    <form action="procesar_registro_alumnos.php" method="POST">
+      <label for="matricula">Matrícula:</label>
+      <input type="text" id="matricula" name="matricula" required>
+
+      <label for="carrera">Carrera:</label>
+      <input type="text" id="carrera" name="carrera" required>
+
+      <label for="ap_paterno">Apellido Paterno:</label>
+      <input type="text" id="ap_paterno" name="ap_paterno" required>
+
+      <label for="ap_materno">Apellido Materno:</label>
+      <input type="text" id="ap_materno" name="ap_materno" required>
+
+      <label for="nombres">Nombres:</label>
+      <input type="text" id="nombres" name="nombres" required>
+
+      <label for="correo_institucional">Correo Institucional:</label>
+      <input type="email" id="correo_institucional" name="correo_institucional" required>
+
+      <label for="crear contraseña">Crear contraseña:</label>
+      <input type="password" id="contrasena" name="contrasena" required>
+
+      <input type="submit" value="Registrarse" class="btn-registrarse">
+      <a href="iniciar_sesion.php">Iniciar Sesión</a>
+    </form>
+  </div>
+</body>
+</html>
